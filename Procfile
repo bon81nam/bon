@@ -1,1 +1,1 @@
-web: gunicorn mypksmarkersmap.wsgi --log-file -
+web: gunicorn mypksmarkersmap.wsgi
