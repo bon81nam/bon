@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>welcome to map</title>
+          <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'map' %}">Map</a>
+        <a class="navbar-brand" href="{% url 'points' %}">Points Listing</a>
+        <a class="navbar-brand" href="{% url 'logout' %}"><h6>LogOut</h6></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br>
+<center><h3><strong>COORDINATE POINTS LISTING</strong></h3></center>
+<br>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col" col width="50">NO</th>
+        <th scope="col" col width="150">NAME POINT</th>
+      <th scope="col" col width="200">BRSO</th>
+      <th scope="col "col width="400">BT68</th>
+      <th scope="col" col witdh="400">WGS84</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+       <td>P1</td>
+      <td>N5180558.095<br>E2056148.413</td>
+      <td>01&#176; 37' 58.98208"<br>110&#176; 11' 24.19276"</td>
+      <td>01&#176; 37' 56.87695"<br>110&#176; 11' 37.22616"</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+        <td>P11</td>
+      <td>N5180599.394<br>E2056149.311</td>
+      <td>01&#176; 38' 00.32677"<br>110&#176; 11' 24.22171"</td>
+      <td>01&#176; 37' 58.22155"<br>110&#176; 11' 37.25511"</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+        <td>PKS10</td>
+      <td>N5180634.708<br>E2056161.701</td>
+      <td>01&#176; 38' 01.47662"<br>110&#176; 11' 24.62251"</td>
+      <td>01&#176; 37' 59.37131"<br>110&#176; 11' 37.65586"</td>
+    </tr>
+  <tr>
+      <th scope="row">4</th>
+      <td>PKS20</td>
+      <td>N5180635.657<br>E2055985.601</td>
+      <td> 01&#176; 38' 01.50703"<br>110&#176; 11' 18.92446"</td>
+      <td>01&#176; 37' 59.40175"<br>110&#176; 11' 31.95854"</td>
+    </tr>
+  <tr>
+      <th scope="row">5</th>
+      <td>PKS30</td>
+      <td>N5180593.316<br>E2055931.041</td>
+      <td>01&#176; 38' 00.12827"<br>110&#176; 11' 17.15918"</td>
+      <td>01&#176; 37' 58.02310"<br>110&#176; 11' 30.19348"</td>
+    </tr>
+  <tr>
+      <th scope="row">6</th>
+      <td>PKS40</td>
+      <td>N5180535.277<br>E2055905.774</td>
+      <td>01&#176; 37' 58.23847"<br>110&#176;11' 16.34178"</td>
+      <td> 01&#176; 37' 56.13344"<br>110&#176; 11' 29.37617"</td>
+    </tr>
+  <tr>
+      <th scope="row">7</th>
+      <td>PKS50</td>
+      <td>N5180402.916<br>E2055903.613</td>
+      <td>01&#176; 37' 53.92882"<br>110&#176; 11' 16.27222"</td>
+      <td> 01&#176; 37' 51.82409"<br>110&#176; 11' 29.30660"</td>
+    </tr>
+  <tr>
+      <th scope="row">8</th>
+      <td>PKS60</td>
+      <td>N5180314.700<br>E2055992.561</td>
+      <td> 01&#176; 37' 51.05678"<br>110&#176; 11' 19.15054"</td>
+      <td>01&#176; 37' 48.95224"<br>110&#176; 11' 32.18453"</td>
+    </tr>
+  <tr>
+      <th scope="row">9</th>
+      <td>PKS70</td>
+      <td>N5180265.264<br>E2056075.026</td>
+      <td>01&#176; 37' 49.44738"<br>110&#176; 11' 21.81899"</td>
+      <td>01&#176; 37' 47.34293"<br>110&#176; 11' 34.85263"</td>
+    </tr>
+  <tr>
+      <th scope="row">10</th>
+      <td>PKS80</td>
+      <td>N5180282.372<br>E2056161.666</td>
+      <td>01&#176; 37' 50.00465"<br>110&#176; 11' 24.62234"</td>
+      <td>01&#176; 37' 47.90015"<br>110&#176; 11' 37.65563"</td>
+    </tr>
+  <tr>
+      <th scope="row">11</th>
+      <td>PKS90</td>
+      <td>N5180518.054<br>E2056172.002</td>
+      <td>01&#176; 37' 57.67843"<br>110&#176; 11' 24.95614"</td>
+      <td> 01&#176; 37 55.57339<br>110&#176; 11 37.98943</td>
+    </tr>
+  <tr>
+      <th scope="row">12</th>
+      <td>SS7063</td>
+      <td>N5180290.322<br>E2056362.116</td>
+      <td>01&#176; 37' 50.26405"<br>110&#176; 11' 31.10826"</td>
+      <td>01&#176; 37' 48.15951"<br>110&#176; 11' 44.14068"</td>
+    </tr>
+  <tr>
+      <th scope="row">13</th>
+      <td>SS7064</td>
+      <td>N5180293.342<br>E2056022.970</td>
+      <td> 01&#176; 37' 50.36145"<br>110&#176; 11' 20.13454"</td>
+      <td>01&#176; 37' 48.25696"<br>110&#176; 11' 33.16837"</td>
+    </tr>
+  <tr>
+      <th scope="row">14</th>
+      <td>SS7065</td>
+      <td>N5180069.582<br>E2056168.202</td>
+      <td>01&#176; 37' 43.07628"<br>110&#176; 11' 24.83440"</td>
+      <td>01&#176; 37' 40.97229"<br>110&#176; 11' 37.86757"</td>
+    </tr>
+  <tr>
+      <th scope="row">15</th>
+      <td>SS7066</td>
+      <td>N5180268.938<br>E2055771.466</td>
+      <td> 01&#176; 37' 49.56617"<br>110&#176; 11' 11.99672"</td>
+      <td> 01&#176; 37' 47.46179"<br>110&#176; 11' 25.03156"</td>
+    </tr>
+  <tr>
+      <th scope="row">16</th>
+      <td>SS7067</td>
+      <td>N5180525.110<br>E2055850.765</td>
+      <td>01&#176; 37' 57.90728"<br>110&#176; 11' 14.56188"</td>
+      <td> 01&#176; 37' 55.80231"<br>110&#176; 11' 27.59643"</td>
+    </tr>
+  <tr>
+      <th scope="row">17</th>
+      <td>BM K0184</td>
+      <td>N5180207.670<br>E2056343.273</td>
+      <td>01&#176; 37' 47.57287"<br>110&#176; 11' 30.49878"</td>
+      <td>01&#176; 37' 45.46852"<br>110&#176; 11' 43.53127"</td>
+    </tr>
+  <tr>
+      <th scope="row">18</th>
+      <td>BM K0185</td>
+      <td>N5180229.216<br>E2056002.614</td>
+      <td>01&#176; 37' 48.27347"<br>110&#176; 11' 19.47606"</td>
+      <td>01&#176; 37' 46.16914"<br>110&#176; 11' 32.50996"</td>
+    </tr>
+  <tr>
+      <th scope="row">19</th>
+      <td>BM K0187</td>
+      <td>N50180242.538<br>E2055716.944</td>
+      <td>01&#176; 37' 48.70644"<br>110&#176; 11' 10.23263"</td>
+      <td>01&#176; 37' 46.60213"<br>110&#176; 11' 23.26771"</td>
+    </tr>
+  <tr>
+      <th scope="row">20</th>
+      <td>BM K0188</td>
+      <td>N5180420.984<br>E2055629.871</td>
+      <td>01&#176; 37' 54.51635"<br>110&#176; 11' 07.41473"</td>
+      <td>01&#176; 37' 52.41165"<br>110&#176; 11' 20.45019"</td>
+    </tr>
+  <tr>
+      <th scope="row">21</th>
+      <td>BM K0189</td>
+      <td>N5180399.085<br>E2055629.871</td>
+      <td> 01&#176; 37' 53.80333"<br>110&#176; 11' 07.41479"</td>
+      <td> 01&#176; 37' 51.69868"<br>110&#176; 11' 20.45025"</td>
+    </tr>
+  <tr>
+      <th scope="row">22</th>
+      <td>BM K0190</td>
+      <td>N5180574.206<br>E2056155.922</td>
+      <td> 01&#176; 37' 59.50668"<br>110&#176; 11' 24.43569"</td>
+      <td> 01&#176;37' 57.40153"<br>110&#176; 11' 37.46901"</td>
+    </tr>
+  <tr>
+      <th scope="row">23</th>
+      <td>TBM 1</td>
+      <td>N5180580.137<br>E2056159.680</td>
+      <td>01&#176; 37' 59.69980"<br>110&#176; 11' 24.55727"</td>
+      <td>01&#176; 37' 57.59463"<br>110&#176; 11' 37.59058"</td>
+    </tr>
+  <tr>
+      <th scope="row">24</th>
+      <td>TBM 2</td>
+      <td>N5180259.955<br>E2056126.417</td>
+      <td> 01&#176; 37' 49.27466"<br>110&#176; 11' 23.48185"</td>
+      <td>01&#176; 37' 47.17023"<br>110&#176; 11' 36.51525"</td>
+    </tr>
+  <tr>
+      <th scope="row">25</th>
+      <td>TBM 3</td>
+      <td>N5180407.309<br>E2055926.955</td>
+      <td>01&#176; 37' 54.07192"<br>110&#176; 11' 17.02748"</td>
+      <td>01&#176; 37' 51.96719"<br>110&#176; 11' 30.06172"</td>
+    </tr>
+  <tr>
+      <th scope="row">26</th>
+      <td>TBM 4</td>
+      <td>N5180631.812<br>E2055948.874</td>
+      <td>01&#176; 38' 01.38174"<br>110&#176; 11' 17.73609"</td>
+      <td>01&#176; 37' 51.96719"<br>110&#176; 11' 30.06172"</td>
+    </tr>
+  <tr>
+      <th scope="row">27</th>
+      <td>TBM 5</td>
+      <td>N5180583.334<br>E2056273.830</td>
+      <td> 01&#176; 37' 59.80421"<br>110&#176; 11' 28.25080"</td>
+      <td>01&#176; 37' 57.69902"<br>110&#176; 11' 41.28363"</td>
+    </tr>
+  </tbody>
+</table>
+
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
