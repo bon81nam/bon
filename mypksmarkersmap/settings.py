@@ -29,7 +29,7 @@ SECRET_KEY = "django-insecure-v9c+ae^s1)#h1yby5zyk0$*vebhm-eg)0&r!p34y0s!83^-55=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'pks-surveying-markers.herokuapp.com']
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -84,12 +84,12 @@ DATABASES = {
     "default": {
         #"ENGINE": "django.db.backends.sqlite3",
         #"NAME": BASE_DIR / "db.sqlite3",
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mohdfadli',
-        'HOST': 'localhost',
-        'PORT': '',
-        'USER': 'mohdfadli',
-        'PASSWORD': '12345678'
+        #'ENGINE': 'django.db.backends.postgresql',
+        #'NAME': 'mohdfadli',
+        #'HOST': 'localhost',
+        #'PORT': '',
+        #'USER': 'mohdfadli',
+        #'PASSWORD': '12345678'
     }
 }
 
@@ -129,7 +129,9 @@ STATIC_URL = "/static/"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_DIRS = [BASE_DIR/'static',]
+STATIC_ROOT = BASE_DIR/'staticfiles'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
