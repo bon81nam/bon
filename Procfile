@@ -1,1 +1,1 @@
-web: gunicorn mypksmarkersmap.wsgi:application
+web: gunicorn mypksmarkersmap.wsgi
